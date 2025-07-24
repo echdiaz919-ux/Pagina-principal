@@ -1,0 +1,137 @@
+/* === ESTILOS GENERALES === */
+body {
+  background-color: #f4f4f4;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* === ENCABEZADO CON IMAGEN DE FONDO === */
+header {
+  background-image: url("img/imagen2.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+}
+
+
+header h1 {
+  margin: 10px 0;
+  font-size: 32px;
+}
+
+header img {
+  border-radius: 50%;
+  margin-top: 15px;
+  width: 150px;
+  height: 150px;
+  border: 4px solid white;
+}
+
+/* === SECCIONES GENERALES === */
+section {
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #004e89;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+a {
+  color: #004e89;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === SECCIÓN FLEX: INTERESES Y HABILIDADES === */
+.contenedor-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bloque {
+  flex: 1 1 300px;
+  background-color: #e7f1fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* === FORMULARIO CON GRID === */
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form input[type="submit"] {
+  background-color: #004e89;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #00325f;
+}
+
+/* === PIE DE PÁGINA === */
+footer {
+  background-color: #00325f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* === DISEÑO RESPONSIVO === */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contenedor-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    padding: 20px 15px;
+  }
+
+  form input[type="submit"] {
+    font-size: 16px;
+  }
+}

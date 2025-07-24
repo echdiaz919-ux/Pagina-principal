@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Página Personal</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>Erick Eduardo Chávez Díaz</h1>
+    <img src="img/erick.jpeg" alt="Foto de Erick">
+  </header>
+
+  <!-- SECCIÓN FLEX: INTERESES Y HABILIDADES -->
+  <section class="contenedor-flex">
+    <div class="bloque">
+      <h2>🎯 Mis intereses</h2>
+      <ul>
+        <li>Tecnología y programación</li>
+        <li>Videojuegos</li>
+        <li>Música</li>
+        <li>Deportes</li>
+      </ul>
+    </div>
+
+    <div class="bloque">
+      <h2>🛠️ Habilidades</h2>
+      <ul>
+        <li>HTML</li>
+        <li>Edición de imágenes y video</li>
+        <li>Trabajo en equipo</li>
+        <li>Resolución de problemas</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE VIDEO -->
+  <section>
+    <h2>🎥 Mi video favorito</h2>
+    <p>Haz clic aquí para ver mi video favorito:</p>
+    <a href="https://youtu.be/B7qRzcM_0DQ" target="_blank" rel="noopener noreferrer">Ver video en YouTube</a>
+  </section>
+
+  <!-- FORMULARIO CON GRID -->
+  <section class="formulario">
+    <h2>📬 Formulario de contacto</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" placeholder="tucorreo@example.com" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+      <input type="submit" value="Enviar mensaje">
+    </form>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Erick Chávez — Página creada para clase de diseño responsivo</p>
+  </footer>
+
+</body>
+</html>
